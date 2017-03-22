@@ -43,12 +43,17 @@ Steps:
 <p>Copy the code (DS18B20_1_Sensor.py) and save the changes. In this example the script read the first ID called 25*, in the future, If you can use several sensors, you will have to check IDs and write it into the script.
 <p>
 
-- 5- Execute script
+- 5- Execute the script
 <p>sudo python DS18B20_1_Sensor.py
 <p>
 ---------------------------------------------------------------
 <h2>Adding other DS18B20 Sensor</h2>
 
 - 1- Connect the new sensor in parallel
-- 2- Create a new Script using the code ((DS18B20_2_Sensor.py). In this case we have two sensor ID, you can check IDs in /sys/bus/w1/devices/  
+- 2- Create a new Script using the code ((DS18B20_2_Sensor.py) or (DS18B20_2_Sensor_V3.py)). In this case we have two sensor ID, you can check IDs in /sys/bus/w1/devices/. Both Scripts show the temperature reading the file.  
+- 3- Execute the script
+
+<p>
+---------------------------------------------------------------
+<h2>Using DHT11 Sensor</h2>
 
