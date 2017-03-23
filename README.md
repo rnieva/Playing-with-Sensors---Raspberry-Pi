@@ -57,3 +57,27 @@ Steps:
 ---------------------------------------------------------------
 <h2>Using DHT11 Sensor</h2>
 
+The DHT11 Sensor measure temperature and humidity ,it is a small, cheap, digital sensor ideal to begin playing with sensors in the Raspberry Pi. There are different versions with 3 and 4 connectors (pins).
+
+DHT11 (3 PINS)
+- 1 - VCC connected to +3.3V~5V
+- 2 - DATA connected to the microcontroller IO port
+- 3 - GND connected to ground
+
+DHT11 (4 PINS)
+- 1 - VCC connected to +3.3V~5V
+- 2 - DATA connected to the microcontroller IO port
+- 3 - Null
+- 4 - GND connected to ground
+
+If you use this model, you have to connect a 4k7Ω-10kΩ resistor from the DATA pin to VCC.
+
+- 1 - Connect the DHT11 to Raspberry Pi.
+<p>VCC --> VCC
+<p>Data --> GPIO 4 
+<p>GND --> GND
+
+- 2 - Create the script
+
+
+
