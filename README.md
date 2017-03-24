@@ -1,11 +1,11 @@
 # Playing-with-Sensors---Raspberry-Pi
-DS18B20 Temperature Sensor
-<p>
-<h2>Using only a DS18B20 Temperature Sensor</h2>
-<p>
-Steps:
-<p>
+The goal of this repository is to show to user without any knowledge about sensors the most easy way to use them using a Raspberry Pi. Connect and Play. :)
 
+
+
+---------------------------------------------------------------
+<h2>Using a DS18B20 Temperature Sensor</h2>
+Steps:
 
 - 1- Download python and update if it's required
 <p>sudo apt-get install python or python3
@@ -15,7 +15,9 @@ Steps:
 
 
 - 2- Connect the sensor to Raspberry Pi
+
 ![alt tag](https://raw.github.com/rnieva/Playing-with-Sensors---Raspberry-Pi/master/scheme1_DS18B20.png)
+
 [GPIO pins](https://www.raspberrypi.org/documentation/usage/gpio/images/a-and-b-gpio-numbers.png)
 <p>Sensor DS18B20 with cable
 <p>Black --> GND
@@ -73,6 +75,9 @@ DHT11 (4 PINS)
 If you use this model, you have to connect a 4k7Ω-10kΩ resistor from the DATA pin to VCC.
 
 - 1 - Connect the DHT11 to Raspberry Pi.
+
+![alt tag](https://raw.github.com/rnieva/Playing-with-Sensors---Raspberry-Pi/master/scheme1_DHT11.png)
+
 <p>VCC --> VCC
 <p>Data --> GPIO 4 
 <p>GND --> GND
