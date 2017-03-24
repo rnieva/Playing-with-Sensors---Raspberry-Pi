@@ -1,5 +1,5 @@
 # Playing-with-Sensors---Raspberry-Pi
-The goal of this repository is to show to user without any knowledge about sensors the most easy way to use them using a Raspberry Pi. Connect and Play. :)
+The goal of this repository is to show to user without any knowledge about sensors the easiest way to use them using a Raspberry Pi. Connect and Play. :)
 
 
 
