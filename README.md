@@ -83,7 +83,7 @@ If you use this model, you have to connect a 4k7Ω-10kΩ resistor from the DATA 
 <p>GND --> GND
 
 - 2 - Create the script.
- After tried several ways to read data from the DTH11, this is the best way. I’m using the Python library dht11.py provided by [szazo](https://github.com/szazo/DHT11_Python/blob/master/dht11.py). In fact you can find here a example perfect.
+ After tried several ways to read data from the DTH11, I have chosen this. I’m using the Python library dht11.py provided by [szazo](https://github.com/szazo/DHT11_Python/blob/master/dht11.py). In fact you can find here a example perfect.
  Create a Script using the code (DTH11_Sensor.py).
 - 3- Execute the script
 
