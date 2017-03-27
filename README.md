@@ -6,9 +6,9 @@ The goal of this repository is to show to user without any knowledge about senso
 Steps:
 
 - 1- Download python and update if it's required
-<p>sudo apt-get install python or python3
-<p>sudo apt-get update
-<p>sudo apt-get upgrade
+<p><em>sudo apt-get install python or python3</em>
+<p><em>sudo apt-get update</em>
+<p><em>sudo apt-get upgrade</em>
 <p>
 
 
@@ -90,7 +90,7 @@ If you use this model, you have to connect a 4k7Ω-10kΩ resistor from the DATA 
 <h2>PIR (IR motion Sensor)</h2>
 This sensor allow you to sense motion, usually used to detect whether a human has moved in or out of the sensors range.
 In this case, If the sensor detect any motion, a Led will blink.
-<p>
+
 - 1 - Connect the PIR and a LED to Raspberry Pi.
 <p>
 
