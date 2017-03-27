@@ -100,6 +100,11 @@ In this case, If the sensor detect any motion, a Led will blink.
 - 3 - Execute Script writing <em>sudo python PIR_Sensor.py</em>
 
 -------------------------------------------------------------------
+<h2>Ultrasonic HC-SR04</h2>
+
+A easy example  [here](https://github.com/rnieva/Ultrasonic-HC-SR04-Raspberry)
+
+-------------------------------------------------------------------
 
 
 
