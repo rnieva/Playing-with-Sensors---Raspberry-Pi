@@ -1,9 +1,7 @@
 # Playing-with-Sensors---Raspberry-Pi
 The goal of this repository is to show to user without any knowledge about sensors the easiest way to use them using a Raspberry Pi. Connect and Play. :)
 
-
-
----------------------------------------------------------------
+------------------------------------------------------
 <h2>Using a DS18B20 Temperature Sensor</h2>
 Steps:
 
@@ -87,19 +85,22 @@ If you use this model, you have to connect a 4k7Ω-10kΩ resistor from the DATA 
  Create a Script using the code (DTH11_Sensor.py).
 - 3- Execute the script
 
----------------------------------------------------------------
+------------------------------------------------------------------
+
 <h2>PIR (IR motion Sensor)</h2>
 This sensor allow you to sense motion, usually used to detect whether a human has moved in or out of the sensors range.
 In this case, If the sensor detect any motion, a Led will blink.
-
+<p>
 - 1 - Connect the PIR and a LED to Raspberry Pi.
 <p>
+
 ![alt tag](https://raw.github.com/rnieva/Playing-with-Sensors---Raspberry-Pi/master/scheme_PIR_LED.png)
 
 - 2 - Create a new Script using the code (PIR_Sensor.py)
 - 3 - Execute Script writing <em>sudo python PIR_Sensor.py</em>
 
----------------------------------------------------------------
+-------------------------------------------------------------------
+
 
 
 
