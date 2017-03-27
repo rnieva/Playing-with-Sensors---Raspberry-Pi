@@ -46,13 +46,13 @@ Steps:
 <p>
 
 - 5- Execute the script
-<p>sudo python DS18B20_1_Sensor.py
+<p> <em>sudo python DS18B20_1_Sensor.py</em>
 <p>
 ---------------------------------------------------------------
 <h2>Adding other DS18B20 Sensor</h2>
 
 - 1- Connect the new sensor in parallel
-- 2- Create a new Script using the code ((DS18B20_2_Sensor.py) or (DS18B20_2_Sensor_V3.py)). In this case we have two sensor ID, you can check your IDs in /sys/bus/w1/devices/ , set the right value IDs. Both Scripts show the temperature reading the file.  
+- 2- Create a new Script using the code (DS18B20_2_Sensor.py or DS18B20_2_Sensor_V3.py). In this case we have two sensor ID, you can check your IDs in /sys/bus/w1/devices/ , set the right value IDs. Both Scripts show the temperature reading the file.  
 - 3- Execute the script
 
 <p>
@@ -88,5 +88,18 @@ If you use this model, you have to connect a 4k7Ω-10kΩ resistor from the DATA 
 - 3- Execute the script
 
 ---------------------------------------------------------------
+<h2>PIR (IR motion Sensor)</h2>
+This sensor allow you to sense motion, usually used to detect whether a human has moved in or out of the sensors range.
+In this case, If the sensor detect any motion, a Led will blink.
+
+- 1 - Connect the PIR and a LED to Raspberry Pi.
+<p>
+![alt tag](https://raw.github.com/rnieva/Playing-with-Sensors---Raspberry-Pi/master/scheme_PIR_LED.png)
+
+- 2 - Create a new Script using the code (PIR_Sensor.py)
+- 3 - Execute Script writing <em>sudo python PIR_Sensor.py</em>
+
+---------------------------------------------------------------
+
 
 
