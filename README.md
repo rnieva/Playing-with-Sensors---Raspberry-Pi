@@ -120,9 +120,10 @@ First of all we have to install a Web Server (Apache), a DB (MySQL) and a progra
 - mysql -u root -p
 - CREATE DATABASE tempSensor1;
 - CREATE TABLE dataSensor1 (tdate DATE, ttime TIME, sensor  TEXT, temperature FLOAT);
+- quit
 
 3- Create a script to read the temperature and store in DB.
-- sudo nano dataDBRealSensor1.py, and copy the code from dataDBRealSensor1.py in this repository. 
+- sudo nano dataDBRealSensor1.py, and copy the code from dataDBRealSensor1.py file you can find in this repository. 
 
 4- Create a task in CRON (CRONTAB).
 - sudo chmod +x dataDBRealSensor1.py --> to do a executable script
@@ -134,12 +135,12 @@ First of all we have to install a Web Server (Apache), a DB (MySQL) and a progra
 - cd /var/www/html/
 - mv index.html index.php
 - sudo nano index.php
-- Copy the code from index.php that you find in this repository
+- Copy the code from index.php that you can find in this repository
 
 TIPS:
 - Add a new user in MySQL to manage the DB.
 - Change the MySQL config, sudo nano /etc/mysql/my.cnf, alter is bind-address --> 127.0.0.1 anse set up 0.0.0.0 to access from any host
-- Setup a static IP. sudo nano /etc/network/interfaces --> Then change yhis line “iface eth0 inet dhcp” by “iface eth0 inet static“.
+- Setup a static IP. sudo nano /etc/network/interfaces --> Then change this line “iface eth0 inet dhcp” by “iface eth0 inet static“.
 - Add any DNS Service
 
 -------------------------------------------------------------------
