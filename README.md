@@ -105,7 +105,41 @@ In this case, If the sensor detect any motion, a Led will blink.
 A easy example  [here](https://github.com/rnieva/Ultrasonic-HC-SR04-Raspberry)
 
 -------------------------------------------------------------------
+<h2>DS18B20 Temperature Sensor in a Web Server</h2>
 
+First of all we have to install a Web Server (Apache), a DB (MySQL) and a program language to store and retrive the data from the DB (PHPH).
+0- Connect your DS18B20 sensor to Raspberry like the first example.
 
+1- Execute next commands.
+- sudo apt-get update and upgrade
+- sudo apt-get install mysql-server python-mysqldb
+- sudo apt-get install apache2 -y
+- sudo apt-get install php5-mysql
 
+2- Now you have to create a new Data Base using MySQL.
+- mysql -u root -p
+- CREATE DATABASE tempSensor1;
+- CREATE TABLE dataSensor1 (tdate DATE, ttime TIME, sensor  TEXT, temperature FLOAT);
 
+3- Create a script to read the temperature and store in DB.
+- sudo nano dataDBRealSensor1.py, and copy the code from dataDBRealSensor1.py in this repository. 
+
+4- Create a task in CRON (CRONTAB).
+- sudo chmod +x dataDBRealSensor1.py --> to do a executable script
+- crontab -e --> Choose any editor and add next line at the botton
+- */1 * * * * /home/pi/./dataDBRealSensor1.py --> in this case the script will execute each 1 minute, you can setup the frecuency like you want, you only have to change the * by others parameters. [Info Cron](https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/) 
+- crontab -r --> remove job
+
+5- Create a file.php in our Apache server.
+- cd /var/www/html/
+- mv index.html index.php
+- sudo nano index.php
+- Copy the code from index.php that you find in this repository
+
+TIPS:
+- Add a new user in MySQL to manage the DB.
+- Change the MySQL config, sudo nano /etc/mysql/my.cnf, alter is bind-address --> 127.0.0.1 anse set up 0.0.0.0 to access from any host
+- Setup a static IP. sudo nano /etc/network/interfaces --> Then change yhis line “iface eth0 inet dhcp” by “iface eth0 inet static“.
+- Add any DNS Service
+
+-------------------------------------------------------------------
