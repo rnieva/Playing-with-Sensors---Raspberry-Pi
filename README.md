@@ -107,6 +107,7 @@ A easy example  [here](https://github.com/rnieva/Ultrasonic-HC-SR04-Raspberry)
 -------------------------------------------------------------------
 <h2>DS18B20 Temperature Sensor in a Web Server</h2>
 
+If you want see the temperature from a Web Browser, please you go on reading :) 
 First of all we have to install a Web Server (Apache), a DB (MySQL) and a program language to store and retrive the data from the DB (PHPH).
 0- Connect your DS18B20 sensor to Raspberry like the first example.
 
@@ -136,6 +137,8 @@ First of all we have to install a Web Server (Apache), a DB (MySQL) and a progra
 - mv index.html index.php
 - sudo nano index.php
 - Copy the code from index.php that you can find in this repository
+
+Now, from any web browser type the RaspberryPi IP Address, and you will able to the current temperature and all data previous store.
 
 TIPS:
 - Add a new user in MySQL to manage the DB.
